@@ -11,13 +11,12 @@
 // Получаем элементы
 const buttonNode = document.querySelector('.button');
 const resultNode = document.querySelector('.output');
+const widthPicture = document.getElementById('width-picture').value;
+const heightPicture = document.getElementById('height-picture').value;
 
-
-buttonNode.addEventListener('click', () => {
-	const widthPicture = document.getElementById('width-picture').value;
-	const heightPicture = document.getElementById('height-picture').value;
+buttonNode.addEventListener('click', () => {	
 		if (widthPicture < 100 || widthPicture > 300 || heightPicture < 100 || heightPicture > 300) {
-			resultNode.innerHTML = "<span>Одно из чисел вне диапазона от 100 до 300</span>"
+			resultNode.innerText = "Одно из чисел вне диапазона от 100 до 300"
 		} else {
 			fetch(`https://picsum.photos/${widthPicture}/${heightPicture}`)
 				.then((response) => {
