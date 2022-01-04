@@ -93,5 +93,3 @@ window.onload = function() {
 		displayResult(JSON.parse(lastRequestPicture));
 	}
 };
-
-
