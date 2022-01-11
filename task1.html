@@ -1,0 +1,53 @@
+<!-- Задание 1.
+Вам дана заготовка и результат, который вы должны получить.
+Ваша задача — написать код, который будет преобразовывать XML в JS-объект
+и выводить его в консоль.
+
+ XML:
+
+<list>
+  <student>
+    <name lang="en">
+      <first>Ivan</first>
+      <second>Ivanov</second>
+    </name>
+    <age>35</age>
+    <prof>teacher</prof>
+  </student>
+  <student>
+    <name lang="ru">
+      <first>Петр</first>
+      <second>Петров</second>
+    </name>
+    <age>58</age>
+    <prof>driver</prof>
+  </student>
+</list>
+JS-объект:
+
+{
+	list: [
+	{ name: 'Ivan Ivanov', age: 35, prof: 'teacher', lang: 'en' },
+	{ name: 'Петр Петров', age: 58, prof: 'driver', lang: 'ru' },
+	]
+} -->
+
+<h1>XML</h1>
+
+Вывод данных осуществляется в консоль
+
+<h3>Вспомогательные ресурсы</h3>
+<ul>
+	<li>
+		<a href="https://developer.mozilla.org/ru/docs/Web/API/DOMParser">DOMParser - класс для парсинга XML</a>
+	</li>
+	<li>
+		<a href="https://developer.mozilla.org/ru/docs/Web/API/Document/querySelector">element.querySelector - один из методов поиска элемента в DOM дереве</a>
+	</li>
+	<li>
+		<a href="https://developer.mozilla.org/ru/docs/Web/API/Element/getAttribute">element.getAttribute - получение атрибуты у DOM элемента</a>
+	</li>
+	<li>
+		<a href="https://developer.mozilla.org/ru/docs/Web/API/Node/textContent">element.textContent - получение текстового содержимого</a>
+	</li>
+</ul>
