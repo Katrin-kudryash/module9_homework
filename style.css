@@ -13,6 +13,15 @@ h1 {
   color: #fff;
 }
 
+h2 {
+  font-size: 13px;
+  margin-right: 7px;
+}
+
+label, h2 {
+  color: rgb(68, 67, 67);
+} 
+
 input {
   background: unset;
   border: 2px solid #fff;
@@ -33,7 +42,10 @@ input:focus {
   outline: none;
   border-color: #0eadaf;
 }
-
+.request-picture {
+  display: flex;
+  margin-top: 20px;
+}
 button {
   background: #0eadaf;
   color: #fff;
@@ -74,5 +86,6 @@ button:hover {
   display: block;
   width: 200px;
   height: 150px;
+  margin: 0;
   text-align: center;
 }
